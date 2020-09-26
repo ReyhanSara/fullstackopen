@@ -1,0 +1,28 @@
+title 0.4: new note
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+note over server:
+The server acceses the req.body field of 
+the request object and creates a new note object,
+and pushes it to an array called notes.
+
+end note
+server-->browser: Responds with HTML page https://studies.cs.helsinki.fi/exampleapp/notes
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+server-->browser: main.js
+
+note over browser:
+browser starts executing js-code
+that requests JSON data from server 
+end note
+
+browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: [{ content: "Fullstack course", date: "2020-09-27" }, ...]
+
+note over browser:
+browser executes the event handler
+that renders notes to display
+end note
+
