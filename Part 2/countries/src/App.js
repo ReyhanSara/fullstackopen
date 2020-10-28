@@ -61,7 +61,7 @@ const App = () => {
     <div>
       <p>find countries :<input type="text" onChange={(e) => handleInput(e)} /></p>
       {showCities.length === 1 ? <SingleCity showCities={showCities} /> : showCities.length > 10 ?
-        "too many" :
+        "Too many matches, specify a filter" :
         showCities.map(citi => <div key={citi.name}>{citi.name}
           <button onClick={() => setShowData(citi)}>show</button></div>)
       }
