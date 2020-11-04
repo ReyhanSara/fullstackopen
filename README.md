@@ -15,6 +15,11 @@ Submissions for
 <li>Getting data from server</li>
 <li>Altering data in server</li>
 <li>Adding styles to React app</li>
+<b>Part 3</b>
+<li>Node.js and Express</li>
+<li>Deploying app to internet</li>
+<li>Saving data to MongoDB</li>
+<li>Validation and ESLint</li>
 
          
 
